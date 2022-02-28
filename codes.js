@@ -4,9 +4,15 @@ module.exports = {
         using namespace std;
 
         int main(){
-            int n1,n2;
-            cin>>n1>>n2;
-            cout<<n1+n2;
+            int no_of_elements;
+            cin>>no_of_elements;
+            vector<int> array(no_of_elements);
+            int sum_of_array=0;
+            for(int i=0;i<no_of_elements;i++){
+                cin>>array[i];
+                sum_of_array+=array[i];
+            }
+            cout<<sum_of_array;
             return 0;
         }
         `
